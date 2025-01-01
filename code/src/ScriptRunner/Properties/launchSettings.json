@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ScriptRunner-KeyGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "--script keygenerator -l 64"
+    }
+  }
+}
