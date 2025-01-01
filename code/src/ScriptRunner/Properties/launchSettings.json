@@ -3,6 +3,10 @@
     "ScriptRunner-KeyGenerator": {
       "commandName": "Project",
       "commandLineArgs": "--script keygenerator -l 64"
+    },
+    "ScriptRunner-Hash": {
+      "commandName": "Project",
+      "commandLineArgs": "--script hash -s test SHA256"
     }
   }
 }
