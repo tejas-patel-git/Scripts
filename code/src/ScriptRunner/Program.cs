@@ -7,7 +7,7 @@ internal class Program
         // Ensure --script argument is present
         if (args.Length < 2 || args[0] != "--script")
         {
-            Console.WriteLine("Usage: --script <ScriptName>");
+            Console.WriteLine("Usage: --script <ScriptName> <Arguments>");
             return;
         }
 
@@ -17,8 +17,7 @@ internal class Program
         // Get the remaining arguments (if any)
         string[] scriptArgs = args.Skip(2).ToArray();
 
-        // Execute the corresponding script using ScriptExecutor
-        Console.WriteLine($"Running script: {scriptName}");
+        // Execute the corresponding script
         ScriptExecutor.RunScript(scriptName, scriptArgs);
     }
 }
